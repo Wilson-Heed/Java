@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Geopolitical Zone in Nigeria</h1>
+    
+    <h2>North Region</h2>
+
+    <h4>North Central</h4>
+    <li id="output"></li>
+
+    <h4>North East</h4>
+    <li id="output2"></li>
+
+    <h4>North West</h4>
+    <li id="output3"></li>
+
+    <h2>South Region</h2>
+
+    <h4>South East</h4>
+    <li id="output4"></li>
+
+    <h4>South South</h4>
+    <li id="output5"></li>
+
+    <h4>South West</h4>
+    <li id="output6"></li>
+`       
+        <style>
+             .overall{
+           /* text-align: center; */
+           position: relative;
+           top: 90px;
+           padding: 80px 10px;
+           background-color: rgb(0, 0, 0);
+           border-radius: 50px;
+           max-width: 300px;
+           margin: auto;
+           text-align: center;
+           box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+        input::placeholder{
+            font-size: 25px;
+            color: white;
+        }
+        #cal{
+            padding-top: 20px ;
+            /* padding-right:5px ; */
+
+            outline: none;
+            font-size: 23px;
+            color: white;
+            border: none;
+            background-color: transparent;
+        }
+        .b1{
+            /* margin: 15px; */
+            position: relative;
+            top: 50px;
+            display: flex;
+            margin: 15px;
+            justify-content: space-evenly;
+        }
+        .b1 button{
+            margin: 0px 1%;
+            /* padding: 14px 22px; */
+            border-radius: 50%;
+            height: 52px;
+            border: none;
+            width: 100%;
+            font-size: 20px;
+        }
+        #btn0{
+            /* padding: 13px; */
+            width: 100%;
+            background-color: gainsboro;
+            /* margin-bottom: 12px; */
+        }
+        #btn01{
+          background-color: goldenrod;
+          font-size: 30px
+        }
+        #zero{
+            padding-right: 95px;
+            border-radius: 50px;
+        }
+        </style>
+    <div class="overall">
+        <input type="text" id="cal" placeholder="0">
+        <div>
+            <div class="b1">
+                <button id="btn0">AC</button>
+                <button id="btn0">+/-</button>
+                <button id="btn0">%</button>
+                <button id="btn01">/</button>
+            </div>
+            <div class="b1">
+                <button  style="background-color: rgb(36, 35, 35); color: white;">7</button>
+                <button  style="background-color: rgb(36, 35, 35); color: white;">8</button>
+                <button  style="background-color: rgb(36, 35, 35); color: white;">9</button>
+                <button id="btn01">x</button>
+            </div>
+            <div class="b1">
+                <button  style="background-color: rgb(36, 35, 35); color: white;">4</button>
+                <button  style="background-color: rgb(36, 35, 35); color: white;">5</button>
+                <button  style="background-color: rgb(36, 35, 35); color: white;">6</button>
+                <button id="btn01">+</button>
+            </div>
+            <div class="b1">
+                <button  style="background-color: rgb(36, 35, 35); color: white;">1</button>
+                <button  style="background-color: rgb(36, 35, 35); color: white;">2</button>
+                <button  style="background-color: rgb(36, 35, 35); color: white;">3</button>
+                <button id="btn01">-</button>
+            </div>
+            <div class="b1">
+                <button id="zero"  style="background-color: rgb(36, 35, 35); color: white;">0</button>
+                <button  style="background-color: rgb(36, 35, 35); color: white;">.</button>
+                <button id="btn01">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
